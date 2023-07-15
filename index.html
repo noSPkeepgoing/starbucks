@@ -19,7 +19,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" 
+    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script defer src="./js/main.js"></script>
   </head>
   
@@ -334,8 +343,9 @@
       <div class="badge">
         <img src="./images/badge.png" alt="Badge"/>
       </div>
-      
+  
     </header>
+
 
     <!-- VISUAL -->
     <section class="visual">
@@ -348,6 +358,84 @@
           <img src="./images/visual_drink2.png" alt="Raspberry Pop Saken Tea" class="cup2 image fade-in"/>
           <img src="./images/visual_drink3.png" alt="Mandarine Verbena Starbucks Fizzio" class="cup3 image fade-in"/>
         </div>
+    </section>
+
+
+    <!-- NOTICE -->
+    <section class="notice">
+      <div class="notice-line">
+        <div class="bg-left"></div>
+        <div class="bg-right"></div>
+        <div class="inner">
+          <div class="inner__left">
+            <h2>공지사항</h2>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)">일부 계정 도용 거래 주의 안내</a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)">시스템 개선 및 서비스 점검 안내</a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)">스타벅스 코리아 사칭 홈페이지 및 이메일 주의 안내</a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)">개인정보처리방침 개정 안내</a>
+                </div>
+              </div>
+            </div>
+            <a href="javascript:void(0)" class="notice-line__more">
+              <div class="material-symbols-outlined">add_circle</div>
+            </a>
+          </div>
+          <div class="inner__right">
+            <h2>스타벅스 프로모션</h2>
+            <div class="toggle-promotion">
+              <div class="material-symbols-outlined">expand_circle_down</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="promotion">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/promotion_slide1.jpeg" alt="서머 2 프로모션">
+              <a href="javascrip:void(0)" class="btn">자세히 보기</a>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/promotion_slide2.jpeg" alt="리저브 서머 커피&원두 출시">
+              <a href="javascrip:void(0)" class="btn">자세히 보기</a>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/promotion_slide3.jpeg" alt="만원 별 이벤트">
+              <a href="javascrip:void(0)" class="btn">자세히 보기</a>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/promotion_slide1.jpeg" alt="서머 2 프로모션">
+              <a href="javascrip:void(0)" class="btn">자세히 보기</a>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/promotion_slide2.jpeg" alt="리저브 서머 커피&원두 출시">
+              <a href="javascrip:void(0)" class="btn">자세히 보기</a>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/promotion_slide3.jpeg" alt="만원 별 이벤트">
+              <a href="javascrip:void(0)" class="btn">자세히 보기</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-prev">
+          <div class="material-symbols-outlined">navigate_before</div>
+        </div>
+        <div class="swiper-next">
+          <div class="material-symbols-outlined">navigate_next</div>
+        </div>
+      </div>
     </section>
   </body>
 </html>
