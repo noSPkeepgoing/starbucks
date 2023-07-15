@@ -21,10 +21,63 @@ a {
   position: relative;
 }
 
+.btn {
+  width: 95px;
+  padding: 7px;
+  border: 2px solid #004734;
+  border-radius: 5px;
+  color: #004734;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: block;
+  transition: background-color 0.7s, color 0.7s, border-color 0.7s;
+}
+
+.btn:hover {
+  background-color: #004734;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.btn.btn--reverse {
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.btn.btn--reverse:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.btn.btn--white {
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.btn.btn--white:hover {
+  background-color: transparent;
+}
+
+.btn.btn--green {
+  background-color: #00704a;
+  border: 2px solid #00704a;
+  color: #fff;
+}
+
+.btn.btn--green {
+}
+
 /* HEADER */
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   background-color: #f6f5f0;
   border-bottom: 1px solid #c8c8c8;
+  z-index: 10;
 }
 
 header > .inner {
@@ -184,4 +237,64 @@ header .main-menu .item .item__contents .contents__menu > ul > li ul li {
 
 header .main-menu .item .item__contents .contents__menu > ul > li ul li:hover {
   text-decoration: underline;
+}
+
+header .badge {
+  position: absolute;
+  top: 152px;
+  right: 42px;
+  cursor: pointer;
+}
+
+/* VISUAL */
+.visual {
+  margin-top: 120px;
+  background-image: url('../images/visual_bg.jpeg');
+  background-position: center;
+  background-size: cover;
+}
+
+.visual .inner {
+  height: 32vw;
+}
+
+.visual .title {
+  position: absolute;
+  top: 35.8%;
+  left: -10px;
+  width: 332px;
+}
+.visual .title > img {
+  max-width: 100%;
+}
+
+.visual .title .btn {
+  position: absolute;
+  bottom: -70px;
+  left: 120px;
+}
+
+.visual .cup1.image {
+  position: absolute;
+  top: 17.5%;
+  left: 50%;
+  width: 190px;
+}
+
+.visual .cup2.image {
+  position: absolute;
+  top: 16.9%;
+  left: 33.9%;
+  width: 190px;
+}
+
+.visual .cup3.image {
+  position: absolute;
+  top: 17.2%;
+  right: 17.4%;
+  width: 190px;
+}
+
+.visual .fade-in {
+  opacity: 0;
 }
