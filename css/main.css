@@ -440,13 +440,14 @@ header .badge {
 .notice .promotion .swiper-slide .btn {
   width: 120px;
   position: absolute;
-  bottom: 0;
+  bottom: 15px;
   left: 0;
   right: 0;
   margin: auto;
 }
 
 .notice .promotion .swiper-pagination {
+  z-index: 0;
   bottom: 40px;
 }
 
@@ -491,4 +492,118 @@ header .badge {
 .notice .promotion .swiper-prev:hover,
 .notice .promotion .swiper-next:hover {
   background-color: #fff;
+}
+
+/* REWORDS */
+.rewords {
+}
+
+.rewords .inner {
+  box-sizing: border-box;
+  height: 240px;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  background-color: #1e3932;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  justify-content: center;
+}
+
+.rewords .inner .inner__logo > img {
+  width: 176px;
+}
+
+.rewords .inner .inner__contents {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+}
+
+.rewords .inner .inner__contents .info-content {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.rewords .inner .inner__contents .info-content .info-content__text h2 {
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 12px;
+  font-size: 26px;
+}
+
+.rewords .inner .inner__contents .info-content .info-content__text p {
+  line-height: 1.4;
+  font-size: 17px;
+}
+
+.rewords .inner .inner__contents .info-content .btn-grop {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 110px;
+}
+
+.rewords .inner .inner__contents .info-content .btn-grop .btn {
+  margin: 0 5px;
+}
+
+.rewords .inner .inner__contents .gift-content {
+  display: flex;
+  margin-top: 10px;
+}
+
+.rewords .inner .inner__contents .gift-content .gift-content__text {
+  line-height: 1.4;
+  font-size: 14px;
+}
+
+.rewords .inner .inner__contents .gift-content .btn-egift {
+  margin-left: 80px;
+}
+
+.rewords .inner .inner__contents .gift-content .btn {
+  width: 170px;
+}
+
+/* SEASON PRODUCT */
+
+.season-product {
+  background-image: url('../images/season_product_bg.jpeg');
+  background-position: center;
+  background-size: cover;
+}
+
+.season-product .inner {
+  height: 500px;
+}
+
+.season-product .inner .product {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 14%;
+  margin: auto;
+  width: 17%;
+  position: absolute;
+}
+
+.season-product .description-group {
+  width: 30%;
+  position: absolute;
+  top: 125px;
+  right: 7.2%;
+}
+
+.season-product .description-group .title {
+  width: 100%;
+}
+
+.season-product .description-group .more {
+  margin-top: 39px;
+  width: 125px;
+}
+
+.season-product .description-group .more > a {
+  width: 100%;
 }
