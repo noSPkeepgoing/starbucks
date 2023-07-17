@@ -61,6 +61,17 @@ a {
   background-color: transparent;
 }
 
+.btn.btn--black {
+  width: 125px;
+  color: #000;
+  border: 2px solid #000;
+}
+
+.btn.btn--black:hover {
+  background-color: #000;
+  color: white;
+}
+
 .btn.btn--green {
   background-color: #00704a;
   border: 2px solid #00704a;
@@ -636,4 +647,79 @@ header .badge {
 .reserve-coffee .inner .product {
   position: absolute;
   right: -39%;
+}
+
+/* PICK YOUR FAVORIT */
+.pick-your-favorite {
+  background-image: url('../images/favorite_bg.jpeg');
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.pick-your-favorite .inner {
+  height: 800px;
+  display: flex;
+  align-items: center;
+}
+
+.pick-your-favorite .text-group {
+  display: flex;
+  width: 362px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.pick-your-favorite .text-group .title {
+  margin-bottom: 40px;
+}
+
+.pick-your-favorite .text-group .description {
+  margin-bottom: 40px;
+}
+
+.pick-your-favorite .text-group .more > a {
+  width: 125px;
+}
+
+.pick-your-favorite .inner .favorite {
+  position: absolute;
+  top: 100px;
+  right: -260px;
+  width: 912px;
+  height: 575px;
+}
+
+/* RESERVE MAGAZINE */
+.reserve-magazine {
+  background-image: url('../images/reserve_bg.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.reserve-magazine .inner {
+  height: 400px;
+}
+
+.reserve-magazine .inner .reserve__title {
+  position: absolute;
+  top: 135px;
+  left: 200px;
+  margin: auto;
+  z-index: 10;
+}
+
+.reserve-magazine .inner .reserve__visual {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  margin-right: -483px;
+  z-index: 0;
+}
+
+.reserve-magazine .inner .more > a {
+  position: absolute;
+  bottom: 100px;
+  left: 320px;
 }

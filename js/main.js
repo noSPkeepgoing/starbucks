@@ -47,7 +47,7 @@ new Swiper('.promotion .swiper', {
 
 const promotionEl = document.querySelector('.promotion');
 const promotionToggleBtn = document.querySelector('.toggle-promotion');
-let isHidePromotion = false;
+let isHidePromotion = true;
 
 promotionToggleBtn.addEventListener('click', function () {
   isHidePromotion = !isHidePromotion;
