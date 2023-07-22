@@ -13,21 +13,34 @@
 ## 👩‍💻 구현 기능
 
 - 헤더 메뉴 `hover`시 드롭다운 메뉴 보이기
+  
   ![드롭다운](https://github.com/noSPkeepgoing/starbucks/assets/125979833/d200d639-e0b3-4521-acac-cf5af0b348a6)
+  
 - 로딩 시 메인 `top banner`에 순차적으로 요소 보이기
+ 
   ![순차적으로요소보이기](https://github.com/noSPkeepgoing/starbucks/assets/125979833/fed72266-0f4f-4d3a-b0ca-e980de006a4c)
+  
 - `swiper.js`를 이용한 요소 슬라이드
+ 
   - 공지사항 슬라이드
+    
     ![공지사항슬라이드](https://github.com/noSPkeepgoing/starbucks/assets/125979833/b1764295-9155-4477-8d83-e0a820bc86bd)
+    
   - 프로모션 슬라이드
+    
     ![프로모션슬라이드](https://github.com/noSPkeepgoing/starbucks/assets/125979833/af26be67-5a4b-4c2e-a0e8-2f15b5aa0a72)
+    
 - `scrollMagic`을 이용한 스크롤 위치 계산 애니메이션
+  
   ![스크롤위치](https://github.com/noSPkeepgoing/starbucks/assets/125979833/d6bb8999-b65c-47a8-9d3f-23d8100dfe9a)
+  
 
 ## 🍝 구현코드
 
 - 요소를 순차적으로 보이는 애니메이션
+  
   - `index.html`
+    
     ```html
     ...
     <!-- gsap cdn 삽입 -->
@@ -51,7 +64,9 @@
             </div>
         </section>
     ```
+    
   - `main.js`
+    
     ```jsx
     const fadeEls = document.querySelectorAll('.visual .fade-in');
 
@@ -63,8 +78,11 @@
       });
     });
     ```
+    
 - 요소 슬라이드 애니메이션
+  
   - `main.js`
+    
     ```jsx
     // 공지사항 슬라이드
     new Swiper('.notice-line .swiper', {
@@ -94,8 +112,11 @@
       },
     });
     ```
+    
 - 스크롤 위치 계산 애니메이션
+  
   - `main.js`
+    
     ```jsx
     const spyEls = document.querySelectorAll('section.scroll-spy');
     spyEls.forEach(function (spyEl) {
@@ -107,7 +128,9 @@
         .addTo(new ScrollMagic.Controller());
     });
     ```
+    
   - `main.css`
+    
     ```jsx
     /* 요소를 숨기고 있다가 변화가 생기면 1.2s의 시간을 거쳐 변화시킴 */
     .back-to-position {
